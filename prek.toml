@@ -1,0 +1,7 @@
+[[repos]]
+repo = "local"
+hooks = [
+  { id = "actionlint", name = "actionlint", entry = "actionlint", language = "system", files = '\.github/workflows/.*\.(yaml|yml)$' },
+  { id = "pin-github-action", name = "pin-github-action", entry = "pin-github-action", language = "system", files = '\.github/workflows/.*\.(yaml|yml)$' },
+  { id = "rumdl", name = "rumdl", entry = "rumdl check", language = "system", files = '\.md$' },
+]

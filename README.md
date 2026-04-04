@@ -55,6 +55,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 ### Other jdx tools worth exploring
 
 If you are already using mise, a few adjacent projects from jdx are also worth a look:
+
 - [fnox](https://github.com/jdx/fnox) for encrypted and remote secret management across development, CI, and production
 - [usage](https://github.com/jdx/usage) for CLI specification and documentation patterns
 - [pitchfork](https://github.com/jdx/pitchfork) for managing project daemons with a strong developer-experience focus

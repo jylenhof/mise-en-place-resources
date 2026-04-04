@@ -1,8 +1,45 @@
 [[repos]]
 repo = "local"
 hooks = [
-  { id = "actionlint", name = "actionlint", entry = "actionlint", language = "system", files = '\.github/workflows/.*\.(yaml|yml)$' },
-  { id = "pinact", name = "pinact", entry = "pinact run", language = "system", files = '\.github/workflows/.*\.(yaml|yml)$' },
-  { id = "rumdl", name = "rumdl", entry = "rumdl check", language = "system", files = '\.md$' },
-  { id = "editorconfig-checker", name = "editorconfig-checker", entry = "ec", language = "system" },
+  {
+    id = "actionlint",
+    name = "actionlint",
+    entry = "actionlint",
+    language = "system",
+    files = '\.github/workflows/.*\.(yaml|yml)$'
+  },
+  {
+    id = "pinact",
+    name = "pinact",
+    entry = "pinact run",
+    language = "system",
+    files = '\.github/workflows/.*\.(yaml|yml)$'
+  },
+  {
+    id = "rumdl",
+    name = "rumdl",
+    entry = "rumdl check",
+    language = "system",
+    files = '\.md$'
+  },
+  {
+    id = "editorconfig-checker",
+    name = "editorconfig-checker",
+    entry = "ec",
+    language = "system"
+  },
+  {
+    id = "tombi-lint",
+    name = "tombi lint",
+    entry = "tombi check",
+    language = "system",
+    files = '\.toml$'
+  },
+  {
+    id = "tombi-fmt",
+    name = "tombi fmt",
+    entry = "tombi fmt",
+    language = "system",
+    files = '\.toml$'
+  },
 ]

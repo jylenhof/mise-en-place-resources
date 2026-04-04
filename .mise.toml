@@ -1,5 +1,6 @@
 [settings]
 npm.package_manager = "bun"
+
 [tools]
 prek = "0.3.8"
 rumdl = "0.1.66"
@@ -7,4 +8,4 @@ bun = "1.3.11"
 pinact = "latest"
 actionlint = "latest"
 tombi = "0.9.14"
-editorconfig-checker = '3.6.1'
+editorconfig-checker = "3.6.1"

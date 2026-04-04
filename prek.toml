@@ -9,6 +9,20 @@ hooks = [
     files = '\.github/workflows/.*\.(yaml|yml)$'
   },
   {
+    id = "editorconfig-checker",
+    name = "editorconfig-checker",
+    entry = "ec",
+    language = "system"
+  },
+  {
+    id = "lychee",
+    name = "lychee",
+    entry = "lychee",
+    language = "system",
+    files = '\.md$'
+  },
+
+  {
     id = "pinact",
     name = "pinact",
     entry = "pinact run",
@@ -23,22 +37,16 @@ hooks = [
     files = '\.md$'
   },
   {
-    id = "editorconfig-checker",
-    name = "editorconfig-checker",
-    entry = "ec",
-    language = "system"
-  },
-  {
-    id = "tombi-lint",
-    name = "tombi lint",
-    entry = "tombi check",
+    id = "tombi-format",
+    name = "tombi format",
+    entry = "tombi format",
     language = "system",
     files = '\.toml$'
   },
   {
-    id = "tombi-fmt",
-    name = "tombi fmt",
-    entry = "tombi fmt",
+    id = "tombi-lint",
+    name = "tombi lint",
+    entry = "tombi lint",
     language = "system",
     files = '\.toml$'
   },

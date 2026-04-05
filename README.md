@@ -42,6 +42,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-krew](https://github.com/soupglasses/mise-krew) | Installs krew, the kubectl plugin manager, via mise. |
 | [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
 | [mise-nix](https://github.com/jbadeau/mise-nix) | Nix integration for mise. |
+| [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [micoo](https://github.com/hasansezertasan/micoo) | A collection of mise plugins for common development tools. |
 

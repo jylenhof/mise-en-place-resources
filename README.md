@@ -28,6 +28,12 @@ They are are maintained independently by their respective authors.
 [mise-completions](https://mise-completions.alltuner.com/) provides community-maintained
 completion definitions for mise tools across a wide range of shells.
 
+### Community guides and tutorials
+
+| Project | Description |
+|---------|-------------|
+| [Stéphane Robert's Blog](https://blog.stephane-robert.info/docs/outils/systeme/mise/) | A comprehensive guide and documentation for mise (French). |
+
 ### Plugin and tool backends
 
 Mise backends install tools from various sources.
@@ -45,6 +51,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [micoo](https://github.com/hasansezertasan/micoo) | A collection of mise plugins for common development tools. |
+| [mise-amber](https://github.com/devastion/mise-amber) | Installs the Amber programming language (compiles to Bash) via mise. |
 
 ### Secret and credential integrations
 

@@ -41,17 +41,21 @@ The projects below offer custom backends or plugin patterns for specific tools.
 
 | Project | Description |
 |---------|-------------|
-| [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
-| [poissonnier](https://github.com/dljsjr/poissonnier) | A mise plugin focused on Rust toolchain management. |
-| [mise-oxc](https://github.com/malept/mise-oxc) | Installs the oxc JavaScript linter and formatter via mise. |
-| [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
-| [mise-krew](https://github.com/soupglasses/mise-krew) | Installs krew, the kubectl plugin manager, via mise. |
-| [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
-| [mise-nix](https://github.com/jbadeau/mise-nix) | Nix integration for mise. |
-| [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
-| [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [micoo](https://github.com/hasansezertasan/micoo) | A collection of mise plugins for common development tools. |
 | [mise-amber](https://github.com/devastion/mise-amber) | Installs the Amber programming language (compiles to Bash) via mise. |
+| [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
+| [mise-krew](https://github.com/soupglasses/mise-krew) | Installs krew, the kubectl plugin manager, via mise. |
+| [mise-nix](https://github.com/jbadeau/mise-nix) | Nix integration for mise. |
+| [mise-oxc](https://github.com/malept/mise-oxc) | Installs the oxc JavaScript linter and formatter via mise. |
+| [mise-postgres-binary](https://github.com/KyleKing/mise-postgres-binary) | Installs PostgreSQL binaries via mise. |
+| [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
+| [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
+| [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
+| [poissonnier](https://github.com/dljsjr/poissonnier) | A mise plugin focused on Rust toolchain management. |
+| [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
+
+> [!Note]
+> `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.
 
 ### Secret and credential integrations
 

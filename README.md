@@ -44,6 +44,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [micoo](https://github.com/hasansezertasan/micoo) | A collection of mise plugins for common development tools. |
 | [mise-amber](https://github.com/devastion/mise-amber) | Installs the Amber programming language (compiles to Bash) via mise. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
+| [mise-git](https://github.com/lrntgr/mise-git) | Installs git via mise. |
 | [mise-krew](https://github.com/soupglasses/mise-krew) | Installs krew, the kubectl plugin manager, via mise. |
 | [mise-nix](https://github.com/jbadeau/mise-nix) | Nix integration for mise. |
 | [mise-oxc](https://github.com/malept/mise-oxc) | Installs the oxc JavaScript linter and formatter via mise. |

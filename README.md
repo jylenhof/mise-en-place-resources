@@ -74,8 +74,15 @@ If you are already using mise, a few adjacent projects from jdx are also worth a
 - [usage](https://github.com/jdx/usage) for CLI specification and documentation patterns
 - [pitchfork](https://github.com/jdx/pitchfork) for managing project daemons with a strong developer-experience focus
 - [communique](https://github.com/jdx/communique) for generating editorialized release notes from git history and pull requests.
+- [Aube](https://github.com/endevco/aube) is a fast Node.js package manager.
 
 They solve different problems, but they share the same focus on practical developer experience and can fit naturally into task-driven repositories.
+
+> [!Note]
+> The lead maintainer of `mise` is now working full-time on **Aube**. Funding this product or subscribing to its services is the primary way to support the ongoing development and maintenance of the `mise` ecosystem.
+
+> [!Note]
+> **en.dev** is "The Developer Tooling Company," an enterprise dedicated to building the world's best developer tools for the next decade. It serves as the official home for `mise`, `aube`, `usage`, `pitchfork`, and `communique`. Supporting **en.dev** through sponsorships or product adoption ensures these high-performance open-source solutions remain sustainable, viable, and continuously improved.
 
 > [!Note]
 > [hk](https://github.com/jdx/hk) is interesting and fast, but if your main goal is to replace `pre-commit`, [prek](https://github.com/j178/prek) deserves stronger consideration. Its biggest practical advantage is compatibility with existing `pre-commit` setups, which lowers migration cost significantly. GitHub star counts also point to a stronger current adoption curve: `prek` is around 7k stars, while `hk` is around 700. That does not settle the technical comparison on its own, but combined with `pre-commit` compatibility it makes `prek` an easier recommendation for teams that want faster hook execution without rewriting their current hook definitions.

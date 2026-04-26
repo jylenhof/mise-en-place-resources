@@ -25,7 +25,7 @@ They are are maintained independently by their respective authors.
 
 ### Shell completion
 
-[mise-completions](https://mise-completions.alltuner.com/) provides community-maintained
+[mise-completions](https://github.com/alltuner/mise-completions-sync) provides community-maintained
 completion definitions for mise tools across a wide range of shells.
 
 ### Community guides and tutorials

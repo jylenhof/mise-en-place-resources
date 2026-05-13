@@ -48,13 +48,25 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-krew](https://github.com/soupglasses/mise-krew) | Installs krew, the kubectl plugin manager, via mise. |
 | [mise-nix](https://github.com/jbadeau/mise-nix) | Nix integration for mise. |
 | [mise-oxc](https://github.com/malept/mise-oxc) | Installs the oxc JavaScript linter and formatter via mise. |
+| [mise-shdoc](https://github.com/shunk031/mise-shdoc) | Installs `shdoc` documentation tooling via mise for shell script documentation generation. |
 | [mise-php](https://github.com/verzly/mise-php) | Installs PHP via mise. |
 | [mise-postgres-binary](https://github.com/KyleKing/mise-postgres-binary) | Installs PostgreSQL binaries via mise. |
 | [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
 | [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
 | [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
+| [mise-ovhcloud-cli](https://github.com/pAkalpa/mise-ovhcloud-cli) | Provides an OVHcloud CLI backend for mise, enabling OVHcloud-specific tooling installs and configuration. |
 | [poissonnier](https://github.com/dljsjr/poissonnier) | A mise plugin focused on Rust toolchain management. |
 | [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
+| [zim-mise](https://github.com/joke/zim-mise) | Integrates Zim wiki tooling with mise for documentation and note-taking workflows. |
+| [mise-moonbit](https://github.com/3w36zj6/mise-moonbit) | A mise plugin for managing Moonbit-related development tooling and workflows. |
+
+### CI automation
+
+| Project | Description |
+|---------|-------------|
+| [mise-upgrade-action](https://github.com/23prime/mise-upgrade-action) | A GitHub Action that keeps mise dependencies and configuration up to date automatically. |
+| [mise-action](https://github.com/jdx/mise-action) | Official mise GitHub Action for running mise tasks and workflows in CI. |
+| [mise-buildkite-plugin](https://github.com/buildkite-plugins/mise-buildkite-plugin) | A Buildkite plugin for running mise tasks and workflows in Buildkite pipelines. |
 
 > [!Note]
 > `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.
@@ -93,3 +105,4 @@ They solve different problems, but they share the same focus on practical develo
 |---------|-------------|
 | [mise-cookbooks](https://github.com/hasansezertasan/mise-cookbooks) | Recipe-style configuration patterns and reusable task definitions for mise projects. |
 | [tasks](https://github.com/seletz/tasks) | Example task library showing patterns for organizing mise task collections. |
+| [mise-tasks](https://github.com/iwamot/mise-tasks) | A collection of predefined mise task templates and examples to streamline project automation. |

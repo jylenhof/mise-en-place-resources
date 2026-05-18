@@ -82,7 +82,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 
 | Project | Description |
 |---------|-------------|
-| [miser.nvim](https://github.com/miversen33/miser.nvim) | Neovim plugin for mise. |
+| [miser.nvim](https://github.com/carldaws/miser.nvim) | Neovim plugin for mise. |
 | [mise-vscode](https://github.com/hverlin/mise-vscode) | Visual Studio Code extension for mise. |
 
 ### Other jdx tools worth exploring

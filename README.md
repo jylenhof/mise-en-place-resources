@@ -78,6 +78,13 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-env-1password](https://github.com/kujenga/mise-env-1password) | Loads secrets from 1Password into the mise environment through the `[env]` section. |
 | [mise-env-fnox](https://github.com/jdx/mise-env-fnox) | Loads secrets from fnox into the mise environment through the `[env]` section. |
 
+### Editor Integrations
+
+| Project | Description |
+|---------|-------------|
+| [miser.nvim](https://github.com/miversen33/miser.nvim) | Neovim plugin for mise. |
+| [mise-vscode](https://github.com/hverlin/mise-vscode) | Visual Studio Code extension for mise. |
+
 ### Other jdx tools worth exploring
 
 If you are already using mise, a few adjacent projects from jdx are also worth a look:

@@ -45,13 +45,19 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-amber](https://github.com/devastion/mise-amber) | Installs the Amber programming language (compiles to Bash) via mise. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [mise-git](https://github.com/lrntgr/mise-git) | Installs git via mise. |
+| [mise-ghcup](https://github.com/wasp-lang/mise-ghcup) | Installs Haskell tools through GHCup via a mise backend plugin. |
+| [mise-gno](https://github.com/junghoon-vans/mise-gno) | Installs and pins Gno CLI tools via a mise backend plugin. |
 | [mise-krew](https://github.com/soupglasses/mise-krew) | Installs krew, the kubectl plugin manager, via mise. |
 | [mise-nix](https://github.com/jbadeau/mise-nix) | Nix integration for mise. |
 | [mise-oxc](https://github.com/malept/mise-oxc) | Installs the oxc JavaScript linter and formatter via mise. |
 | [mise-shdoc](https://github.com/shunk031/mise-shdoc) | Installs `shdoc` documentation tooling via mise for shell script documentation generation. |
 | [mise-php](https://github.com/verzly/mise-php) | Installs PHP via mise. |
+| [mise-static-php](https://github.com/joshuarosato/mise-static-php) | Installs precompiled StaticPHP CLI and FPM binaries via mise. |
 | [mise-postgres-binary](https://github.com/KyleKing/mise-postgres-binary) | Installs PostgreSQL binaries via mise. |
+| [mise-mariadb](https://github.com/verzly/mise-mariadb) | MariaDB version manager plugin for mise. |
+| [mise-db](https://github.com/lcmen/mise-db) | Installs prebuilt PostgreSQL, MySQL, and Valkey binaries via a custom mise backend. |
 | [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
+| [mise-expert](https://github.com/quentin-rodriguez/mise-expert) | Installs Expert, the Elixir language server, via mise. |
 | [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
 | [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
 | [mise-ovhcloud-cli](https://github.com/pAkalpa/mise-ovhcloud-cli) | Provides an OVHcloud CLI backend for mise, enabling OVHcloud-specific tooling installs and configuration. |
@@ -67,6 +73,19 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-upgrade-action](https://github.com/23prime/mise-upgrade-action) | A GitHub Action that keeps mise dependencies and configuration up to date automatically. |
 | [mise-action](https://github.com/jdx/mise-action) | Official mise GitHub Action for running mise tasks and workflows in CI. |
 | [mise-buildkite-plugin](https://github.com/buildkite-plugins/mise-buildkite-plugin) | A Buildkite plugin for running mise tasks and workflows in Buildkite pipelines. |
+| [workflows](https://github.com/lumirelle/workflows) | Reusable GitHub Actions workflows for mise-based CI, coverage, and release pipelines. |
+
+### Git hooks
+
+| Project | Description |
+|---------|-------------|
+| [pre-commit-mise-lock](https://github.com/lohn/pre-commit-mise-lock) | A pre-commit hook that keeps the mise lockfile (`mise.lock`) up to date automatically. |
+
+### Dotfiles management
+
+| Project | Description |
+|---------|-------------|
+| [mise-dotfiles-uninstall](https://github.com/veerendra2/mise-dotfiles-uninstall) | Safely unlinks TOML-configured dotfile symlinks created by mise until native uninstall support is available. |
 
 > [!Note]
 > `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.

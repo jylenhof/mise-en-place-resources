@@ -1,10 +1,10 @@
+---
 name: prek checks
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-
 
 permissions:
   contents: read
@@ -13,6 +13,7 @@ jobs:
   prek-checks:
     name: Prek Checks
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: "Cleaning up"
         uses: gacts/run-and-post-run@598d7a875d5620e0457490555b5e18e46082aa47 # v1.4.4

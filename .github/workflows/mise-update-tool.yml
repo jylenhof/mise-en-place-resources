@@ -41,7 +41,7 @@ jobs:
         uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
 
       - name: Upgrade local mise tools
-        uses: jylenhof/mise-update-tool@9b3bb5315cf9078c57291ff638c672fd9fc8aaff # main
+        uses: jylenhof/mise-update-tool@c9647849d0d7585b6dec6510ba7fcddf8d93fcba # main
         with:
           token: ${{ steps.generate-token.outputs.token }}
           tools: ${{ inputs.tools }}

@@ -34,7 +34,6 @@ jobs:
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
           permission-contents: write
           permission-pull-requests: write
-          permission-workflows: write
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

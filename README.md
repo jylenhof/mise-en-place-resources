@@ -64,7 +64,6 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [poissonnier](https://github.com/dljsjr/poissonnier) | A mise plugin focused on Rust toolchain management. |
 | [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
 | [zim-mise](https://github.com/joke/zim-mise) | Integrates Zim wiki tooling with mise for documentation and note-taking workflows. |
-| [mise-moonbit](https://github.com/3w36zj6/mise-moonbit) | A mise plugin for managing Moonbit-related development tooling and workflows. |
 
 ### CI automation
 

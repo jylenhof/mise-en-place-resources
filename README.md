@@ -41,8 +41,6 @@ The projects below offer custom backends or plugin patterns for specific tools.
 
 | Project | Description |
 |---------|-------------|
-| [micoo](https://github.com/hasansezertasan/micoo) | A collection of mise plugins for common development tools. |
-| [mise-amber](https://github.com/devastion/mise-amber) | Installs the Amber programming language (compiles to Bash) via mise. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [mise-git](https://github.com/lrntgr/mise-git) | Installs git via mise. |
 | [mise-ghcup](https://github.com/wasp-lang/mise-ghcup) | Installs Haskell tools through GHCup via a mise backend plugin. |

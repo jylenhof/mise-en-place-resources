@@ -67,7 +67,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 
 | Project | Description |
 |---------|-------------|
-| [mise-upgrade-action](https://github.com/23prime/mise-upgrade-action) | A GitHub Action that keeps mise dependencies and configuration up to date automatically. |
+| [mise-update-tool](https://github.com/jylenhof/mise-update-tool) | A GitHub Action that upgrades tools from your local mise config with `mise upgrade --bump --local` and optionally opens pull requests when config files change. |
 | [mise-action](https://github.com/jdx/mise-action) | Official mise GitHub Action for running mise tasks and workflows in CI. |
 | [mise-buildkite-plugin](https://github.com/buildkite-plugins/mise-buildkite-plugin) | A Buildkite plugin for running mise tasks and workflows in Buildkite pipelines. |
 | [workflows](https://github.com/lumirelle/workflows) | Reusable GitHub Actions workflows for mise-based CI, coverage, and release pipelines. |

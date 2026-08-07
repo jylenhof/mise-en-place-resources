@@ -63,6 +63,9 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
 | [zim-mise](https://github.com/joke/zim-mise) | Integrates Zim wiki tooling with mise for documentation and note-taking workflows. |
 
+> [!Note]
+> `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.
+
 ### CI automation
 
 | Project | Description |
@@ -83,9 +86,6 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | Project | Description |
 |---------|-------------|
 | [mise-dotfiles-uninstall](https://github.com/veerendra2/mise-dotfiles-uninstall) | Safely unlinks TOML-configured dotfile symlinks created by mise until native uninstall support is available. |
-
-> [!Note]
-> `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.
 
 ### Secret and credential integrations
 

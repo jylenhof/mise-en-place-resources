@@ -59,9 +59,13 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
 | [mise-vite-plus](https://github.com/markmals/mise-vite-plus) | Integrates the Vite+ unified web development toolchain with mise. |
 | [mise-ovhcloud-cli](https://github.com/pAkalpa/mise-ovhcloud-cli) | Provides an OVHcloud CLI backend for mise, enabling OVHcloud-specific tooling installs and configuration. |
+| [mise-cf-terraforming](https://github.com/pAkalpa/mise-cf-terraforming) | Cloudflare Terraforming plugin for mise to terraform existing Cloudflare resources. |
 | [poissonnier](https://github.com/dljsjr/poissonnier) | A mise plugin focused on Rust toolchain management. |
 | [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
 | [zim-mise](https://github.com/joke/zim-mise) | Integrates Zim wiki tooling with mise for documentation and note-taking workflows. |
+
+> [!Note]
+> `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.
 
 ### CI automation
 
@@ -83,9 +87,6 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | Project | Description |
 |---------|-------------|
 | [mise-dotfiles-uninstall](https://github.com/veerendra2/mise-dotfiles-uninstall) | Safely unlinks TOML-configured dotfile symlinks created by mise until native uninstall support is available. |
-
-> [!Note]
-> `mise-uvtool` is particularly useful for scenarios like private PyPI support, as `mise` already provides a built-in solution for public packages via `uv tool` (using the `pipx` backend with `uvx=true`). While it currently lacks keyring integration, it offers a solid foundation, making it a worthwhile option to avoid starting from scratch.
 
 ### Secret and credential integrations
 

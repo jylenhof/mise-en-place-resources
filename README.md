@@ -2,7 +2,7 @@
 
 ## Project
 
-[mise-en-place](https://github.com/jdx/mise.git)
+[mise-en-place](https://github.com/jdx/mise)
 
 ## Documentation
 
@@ -41,8 +41,6 @@ The projects below offer custom backends or plugin patterns for specific tools.
 
 | Project | Description |
 |---------|-------------|
-| [micoo](https://github.com/hasansezertasan/micoo) | A collection of mise plugins for common development tools. |
-| [mise-amber](https://github.com/devastion/mise-amber) | Installs the Amber programming language (compiles to Bash) via mise. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [mise-git](https://github.com/lrntgr/mise-git) | Installs git via mise. |
 | [mise-ghcup](https://github.com/wasp-lang/mise-ghcup) | Installs Haskell tools through GHCup via a mise backend plugin. |
@@ -55,7 +53,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-static-php](https://github.com/joshuarosato/mise-static-php) | Installs precompiled StaticPHP CLI and FPM binaries via mise. |
 | [mise-postgres-binary](https://github.com/KyleKing/mise-postgres-binary) | Installs PostgreSQL binaries via mise. |
 | [mise-mariadb](https://github.com/verzly/mise-mariadb) | MariaDB version manager plugin for mise. |
-| [mise-db](https://github.com/lcmen/mise-db) | Installs prebuilt PostgreSQL, MySQL, and Valkey binaries via a custom mise backend. |
+| [hako](https://github.com/lcmen/hako) | Installs prebuilt PostgreSQL, MySQL, and Valkey binaries via a custom mise backend. |
 | [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
 | [mise-expert](https://github.com/quentin-rodriguez/mise-expert) | Installs Expert, the Elixir language server, via mise. |
 | [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
@@ -64,13 +62,12 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [poissonnier](https://github.com/dljsjr/poissonnier) | A mise plugin focused on Rust toolchain management. |
 | [vfox-mongod](https://github.com/echocat/vfox-mongod) | Installs MongoDB using the vfox backend for mise. |
 | [zim-mise](https://github.com/joke/zim-mise) | Integrates Zim wiki tooling with mise for documentation and note-taking workflows. |
-| [mise-moonbit](https://github.com/3w36zj6/mise-moonbit) | A mise plugin for managing Moonbit-related development tooling and workflows. |
 
 ### CI automation
 
 | Project | Description |
 |---------|-------------|
-| [mise-upgrade-action](https://github.com/23prime/mise-upgrade-action) | A GitHub Action that keeps mise dependencies and configuration up to date automatically. |
+| [mise-update-tool](https://github.com/jylenhof/mise-update-tool) | A GitHub Action that upgrades tools from your local mise config with `mise upgrade --bump --local` and optionally opens pull requests when config files change. |
 | [mise-action](https://github.com/jdx/mise-action) | Official mise GitHub Action for running mise tasks and workflows in CI. |
 | [mise-buildkite-plugin](https://github.com/buildkite-plugins/mise-buildkite-plugin) | A Buildkite plugin for running mise tasks and workflows in Buildkite pipelines. |
 | [workflows](https://github.com/lumirelle/workflows) | Reusable GitHub Actions workflows for mise-based CI, coverage, and release pipelines. |
@@ -112,7 +109,7 @@ If you are already using mise, a few adjacent projects from jdx are also worth a
 - [usage](https://github.com/jdx/usage) for CLI specification and documentation patterns
 - [pitchfork](https://github.com/jdx/pitchfork) for managing project daemons with a strong developer-experience focus
 - [communique](https://github.com/jdx/communique) for generating editorialized release notes from git history and pull requests.
-- [Aube](https://github.com/endevco/aube) is a fast Node.js package manager.
+- [Aube](https://github.com/jdx/aube) is a fast Node.js package manager.
 
 They solve different problems, but they share the same focus on practical developer experience and can fit naturally into task-driven repositories.
 

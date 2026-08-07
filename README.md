@@ -2,7 +2,7 @@
 
 ## Project
 
-[mise-en-place](https://github.com/jdx/mise.git)
+[mise-en-place](https://github.com/jdx/mise)
 
 ## Documentation
 
@@ -55,7 +55,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-static-php](https://github.com/joshuarosato/mise-static-php) | Installs precompiled StaticPHP CLI and FPM binaries via mise. |
 | [mise-postgres-binary](https://github.com/KyleKing/mise-postgres-binary) | Installs PostgreSQL binaries via mise. |
 | [mise-mariadb](https://github.com/verzly/mise-mariadb) | MariaDB version manager plugin for mise. |
-| [mise-db](https://github.com/lcmen/mise-db) | Installs prebuilt PostgreSQL, MySQL, and Valkey binaries via a custom mise backend. |
+| [hako](https://github.com/lcmen/hako) | Installs prebuilt PostgreSQL, MySQL, and Valkey binaries via a custom mise backend. |
 | [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
 | [mise-expert](https://github.com/quentin-rodriguez/mise-expert) | Installs Expert, the Elixir language server, via mise. |
 | [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |
@@ -111,7 +111,7 @@ If you are already using mise, a few adjacent projects from jdx are also worth a
 - [usage](https://github.com/jdx/usage) for CLI specification and documentation patterns
 - [pitchfork](https://github.com/jdx/pitchfork) for managing project daemons with a strong developer-experience focus
 - [communique](https://github.com/jdx/communique) for generating editorialized release notes from git history and pull requests.
-- [Aube](https://github.com/endevco/aube) is a fast Node.js package manager.
+- [Aube](https://github.com/jdx/aube) is a fast Node.js package manager.
 
 They solve different problems, but they share the same focus on practical developer experience and can fit naturally into task-driven repositories.
 

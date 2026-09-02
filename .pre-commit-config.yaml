@@ -113,6 +113,6 @@ repos:
 
       - id: lychee # markdown link checker
         name: lychee
-        entry: lychee
+        entry: "lychee --exclude https://blog.stephane-robert.info/docs/outils/systeme/mise"
         language: system
         files: '\.md$'

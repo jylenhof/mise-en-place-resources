@@ -41,6 +41,7 @@ The projects below offer custom backends or plugin patterns for specific tools.
 
 | Project | Description |
 |---------|-------------|
+| [mise-db](https://github.com/lcmen/mise-db) | A custom mise backend plugin that provides a local database engine through native binaries. |
 | [mise-gib](https://github.com/jbadeau/mise-gib) | Mise plugin for Gib. |
 | [mise-git](https://github.com/lrntgr/mise-git) | Installs git via mise. |
 | [mise-ghcup](https://github.com/wasp-lang/mise-ghcup) | Installs Haskell tools through GHCup via a mise backend plugin. |
@@ -53,7 +54,6 @@ The projects below offer custom backends or plugin patterns for specific tools.
 | [mise-static-php](https://github.com/joshuarosato/mise-static-php) | Installs precompiled StaticPHP CLI and FPM binaries via mise. |
 | [mise-postgres-binary](https://github.com/KyleKing/mise-postgres-binary) | Installs PostgreSQL binaries via mise. |
 | [mise-mariadb](https://github.com/verzly/mise-mariadb) | MariaDB version manager plugin for mise. |
-| [hako](https://github.com/lcmen/hako) | Installs prebuilt PostgreSQL, MySQL, and Valkey binaries via a custom mise backend. |
 | [mise-selene](https://github.com/quentin-rodriguez/mise-selene) | Installs the Selene Lua static analyzer via mise. |
 | [mise-expert](https://github.com/quentin-rodriguez/mise-expert) | Installs Expert, the Elixir language server, via mise. |
 | [mise-uvtool](https://github.com/michaelprowacki/mise-uvtool) | Installs Python tools via `uv`. Credentials are currently hardcoded; keyring support is not implemented. A patch or fork adding keyring integration is worth investigating. |

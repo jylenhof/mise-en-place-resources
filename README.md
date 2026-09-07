@@ -110,7 +110,7 @@ If you are already using mise, a few adjacent projects from jdx are also worth a
 - [usage](https://github.com/jdx/usage) for CLI specification and documentation patterns
 - [pitchfork](https://github.com/jdx/pitchfork) for managing project daemons with a strong developer-experience focus
 - [communique](https://github.com/jdx/communique) for generating editorialized release notes from git history and pull requests.
-- [Aube](https://github.com/jdx/aube) is a fast Node.js package manager.
+- [Aube](https://github.com/aubepkg/aube) is a fast Node.js package manager.
 
 They solve different problems, but they share the same focus on practical developer experience and can fit naturally into task-driven repositories.
 

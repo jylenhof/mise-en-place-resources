@@ -9,6 +9,18 @@ on:
     branches:
       - main
     types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      mise_cache:
+        description: Override mise-action cache option.
+        required: false
+        type: string
+        default: ''
+      mise_version:
+        description: Override mise-action version option.
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -43,8 +55,8 @@ jobs:
         env:
           MISE_INSTALL_FROM_GITHUB: 1
         with:
-          cache: false
-          version: ${{ vars.MISE_VERSION }}
+          cache: ${{ inputs.mise_cache || vars.MISE_CACHE || false }}
+          version: ${{ inputs.mise_version || vars.MISE_VERSION }}
 
       - name: Run gh-action-pulse
         env:

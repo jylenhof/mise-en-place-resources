@@ -5,6 +5,18 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+    inputs:
+      mise_cache:
+        description: Override mise-action cache option.
+        required: false
+        type: string
+        default: ''
+      mise_version:
+        description: Override mise-action version option.
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -32,6 +44,9 @@ jobs:
 
       - name: Set up mise
         uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
+        with:
+          cache: ${{ inputs.mise_cache || vars.MISE_CACHE || true }}
+          version: ${{ inputs.mise_version || vars.MISE_VERSION }}
 
       - name: Run prek checks
         run: prek run --all-files --show-diff-on-failure

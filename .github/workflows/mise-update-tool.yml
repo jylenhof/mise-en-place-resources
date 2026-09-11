@@ -14,6 +14,16 @@ on:
         description: Comma separated tools to exclude from the upgrade.
         required: false
         default: ''
+      mise_cache:
+        description: Override mise-action cache option.
+        required: false
+        type: string
+        default: ''
+      mise_version:
+        description: Override mise-action version option.
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -51,6 +61,9 @@ jobs:
 
       - name: Install mise
         uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
+        with:
+          cache: ${{ inputs.mise_cache || vars.MISE_CACHE || true }}
+          version: ${{ inputs.mise_version || vars.MISE_VERSION }}
 
       - name: Upgrade local mise tools
         uses: jylenhof/mise-update-tool@2c847ded31353d8e4e70a1b334078d2aa2bc16b9 # v1.0.4

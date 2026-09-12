@@ -71,6 +71,7 @@ jobs:
           MISE_INSTALL_FROM_GITHUB: 1
         with:
           cache: ${{ github.event_name == 'workflow_dispatch' && toJSON(inputs.mise_cache) || vars.MISE_CACHE || 'true' }}
+          cache_key_prefix: mise-v1-gh-action-pulse-pr.yml
           version: ${{ inputs.mise_version || vars.MISE_VERSION }}
 
       - name: Run gh-action-pulse

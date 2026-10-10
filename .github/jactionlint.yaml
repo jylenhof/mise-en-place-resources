@@ -1,0 +1,7 @@
+---
+# See https://jactionlint.jdx.dev/rules for all rule IDs.
+profile: default
+
+rules:
+  # Every job must declare timeout-minutes (no upper bound enforced).
+  missing-timeout: error

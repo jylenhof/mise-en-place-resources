@@ -16,7 +16,9 @@ on:
         required: false
         type: string
         default: ''
-
+defaults:
+  run:
+    shell: bash --noprofile --norc -eo pipefail {0}
 permissions:
   contents: read
 
@@ -27,7 +29,7 @@ concurrency:
 jobs:
   gh-action-pulse:
     name: gh-action-pulse
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       UV_LINK_MODE: copy
@@ -54,7 +56,8 @@ jobs:
         env:
           MISE_INSTALL_FROM_GITHUB: 1
         with:
-          # Tools installed via uv/pipx backends break when restored from the mise cache
+          # Cache disabled: tools installed via the uv/pipx backends break
+          # when restored from the mise cache (upstream issue, not fixed yet):
           # https://github.com/jdx/mise/discussions/13984
           cache: false
           version: ${{ inputs.mise_version || vars.MISE_VERSION }}
